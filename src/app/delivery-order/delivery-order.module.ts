@@ -6,6 +6,7 @@ import { AddOrderComponent } from './components/add-order/add-order.component';
 import { OrdersTableComponent } from './components/orders-table/orders-table.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule }   from '@angular/forms';
+import { RefuelingMarker } from '../classes/RefuelingMarker.class';
 
 const routes: Routes = [
   {
@@ -28,3 +29,8 @@ const routes: Routes = [
   ]
 })
 export class DeliveryOrderModule { }
+
+
+const refuelingMarker = new RefuelingMarker('red', 45);
+refuelingMarker.refueling(35);
+console.log(refuelingMarker.inkQuantity);
