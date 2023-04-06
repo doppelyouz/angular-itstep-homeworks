@@ -7,6 +7,8 @@ import { OrdersTableComponent } from './components/orders-table/orders-table.com
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule }   from '@angular/forms';
 import { RefuelingMarker } from '../classes/RefuelingMarker.class';
+import { TopbarComponent } from './components/topbar/topbar.component';
+import { HoverableDirective } from '../directives/hoverable.directive';
 
 const routes: Routes = [
   {
@@ -20,7 +22,9 @@ const routes: Routes = [
     OrdersComponent,
     OrderComponent,
     AddOrderComponent,
-    OrdersTableComponent
+    OrdersTableComponent,
+    TopbarComponent,
+    HoverableDirective
   ],
   imports: [
     CommonModule,
