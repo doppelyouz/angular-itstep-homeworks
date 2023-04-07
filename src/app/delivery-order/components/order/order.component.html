@@ -1,4 +1,4 @@
 <div class="order">
-  <div [ngStyle]="{'color' : getWeekDay() ? 'red' : 'black'}">{{order.title}}</div>
+  <div [ngStyle]="{'color' : isItWeekDay() ? 'red' : 'black'}">{{order.title}}</div>
   <div>{{order.date | date}}</div>
 </div>

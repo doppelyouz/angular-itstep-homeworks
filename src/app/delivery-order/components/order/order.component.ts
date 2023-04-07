@@ -9,9 +9,7 @@ import { OrderInterface } from '../../types/Order.interface';
 export class OrderComponent {
   @Input() order!: OrderInterface;
 
-  getWeekDay() {
-    let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
-
-    return days[this.order.date.getDay()] === "ВС" || days[this.order.date.getDay()] === "СБ"
+  isItWeekDay() {
+    return this.order.date.getDay() === 0 || this.order.date.getDay() === 6
   }
 }
