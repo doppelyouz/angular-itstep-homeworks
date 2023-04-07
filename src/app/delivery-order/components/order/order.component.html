@@ -1,4 +1,4 @@
-<div class="order">
+<div class="order" appColorizeBorder date="{{order.date}}">
   <div [ngStyle]="{'color' : isItWeekDay() ? 'red' : 'black'}">{{order.title}}</div>
   <div>{{order.date | date}}</div>
 </div>

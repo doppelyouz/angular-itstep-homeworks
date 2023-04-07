@@ -9,7 +9,7 @@ import { FormsModule }   from '@angular/forms';
 import { RefuelingMarker } from '../classes/RefuelingMarker.class';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { HoverableDirective } from '../directives/hoverable.directive';
-import { Marker } from '../classes/Marker.class';
+import { ColorizeBorderDirective } from '../directives/colorize-border.directive';
 
 const routes: Routes = [
   {
@@ -25,7 +25,8 @@ const routes: Routes = [
     AddOrderComponent,
     OrdersTableComponent,
     TopbarComponent,
-    HoverableDirective
+    HoverableDirective,
+    ColorizeBorderDirective
   ],
   imports: [
     CommonModule,
