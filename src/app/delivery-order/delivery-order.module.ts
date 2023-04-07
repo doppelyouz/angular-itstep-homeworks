@@ -5,17 +5,23 @@ import { OrderComponent } from './components/order/order.component';
 import { AddOrderComponent } from './components/add-order/add-order.component';
 import { OrdersTableComponent } from './components/orders-table/orders-table.component';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule }   from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { RefuelingMarker } from '../classes/RefuelingMarker.class';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { HoverableDirective } from '../directives/hoverable.directive';
 import { ColorizeBorderDirective } from '../directives/colorize-border.directive';
+import { FormComponent } from './components/form/form.component';
+import { ConfirmationComponent } from './components/confirmation/confirmation.component';
 
 const routes: Routes = [
   {
-      path: 'orders',
+      path: '',
       component: OrdersTableComponent
-  }
+  },
+  {
+      path: 'form',
+      component: FormComponent
+  },
 ]
 
 @NgModule({
@@ -26,12 +32,15 @@ const routes: Routes = [
     OrdersTableComponent,
     TopbarComponent,
     HoverableDirective,
-    ColorizeBorderDirective
+    ColorizeBorderDirective,
+    FormComponent,
+    ConfirmationComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class DeliveryOrderModule { }

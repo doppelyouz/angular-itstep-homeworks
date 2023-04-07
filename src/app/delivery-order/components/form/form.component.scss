@@ -1,0 +1,10 @@
+.registration {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .form-group {
+    margin-bottom: 15px;
+  }
+}

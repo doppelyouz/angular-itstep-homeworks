@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Phone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ profileForm.name }}</td>
+        <td>{{ profileForm.surname }}</td>
+        <td>{{ profileForm.phone }}</td>
+        <td>{{ profileForm.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="submit" class="btn btn-primary">Accept</button>
+</form>
