@@ -9,6 +9,7 @@ import { FormsModule }   from '@angular/forms';
 import { RefuelingMarker } from '../classes/RefuelingMarker.class';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { HoverableDirective } from '../directives/hoverable.directive';
+import { Marker } from '../classes/Marker.class';
 
 const routes: Routes = [
   {
@@ -34,7 +35,8 @@ const routes: Routes = [
 })
 export class DeliveryOrderModule { }
 
-
 const refuelingMarker = new RefuelingMarker('red', 45);
+refuelingMarker.printing('asdasdasd') // 9
+console.log(refuelingMarker.inkQuantity);
 refuelingMarker.refueling(35);
 console.log(refuelingMarker.inkQuantity);

@@ -11,7 +11,7 @@ export class Marker {
     }
   }
 
-  printing(): void {
-    this.inkQuantity -= 0.5;
+  printing(str: string): void {
+    this.inkQuantity -= (str.length * 0.5);
   }
 }
