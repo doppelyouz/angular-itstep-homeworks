@@ -1,10 +1,8 @@
 import { Component, DoCheck, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
-import data from 'src/data';
 import { LessonInterface } from '../../types/lesson.interface';
 import { ScheduleService } from '../../services/schedule.service';
-import { TimetableInterface } from '../../types/timetable.interface';
 
 @Component({
   selector: 'app-lesson-page',
