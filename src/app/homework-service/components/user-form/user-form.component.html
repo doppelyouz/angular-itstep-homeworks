@@ -1,0 +1,10 @@
+<div class="workspace">
+  <form>
+    <label>
+      Name:
+      <input type="text" [(ngModel)]="name" name="name" />
+    </label>
+    <button (click)="checkAge()" class="btn btn-default">Check age</button>
+  </form>
+  <app-user-age [isAllowed]="isAllowed" *ngIf="isShown"/>
+</div>
