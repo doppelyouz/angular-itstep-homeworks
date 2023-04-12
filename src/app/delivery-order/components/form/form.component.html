@@ -1,5 +1,3 @@
-<div>
-  <app-topbar />
   <div class="registration">
     <form (ngSubmit)="onSubmit()" [formGroup]="myForm">
       <div class="form-group">
@@ -27,4 +25,3 @@
     </form>
     <app-confirmation *ngIf="isSubmitted" [profileForm]="formToConfirmation" />
   </div>
-</div>

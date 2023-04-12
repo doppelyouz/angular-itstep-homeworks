@@ -7,8 +7,6 @@ import { OrdersTableComponent } from './components/orders-table/orders-table.com
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { RefuelingMarker } from '../classes/RefuelingMarker.class';
-import { TopbarComponent } from './components/topbar/topbar.component';
-import { HoverableDirective } from '../directives/hoverable.directive';
 import { ColorizeBorderDirective } from '../directives/colorize-border.directive';
 import { FormComponent } from './components/form/form.component';
 import { ConfirmationComponent } from './components/confirmation/confirmation.component';
@@ -30,8 +28,6 @@ const routes: Routes = [
     OrderComponent,
     AddOrderComponent,
     OrdersTableComponent,
-    TopbarComponent,
-    HoverableDirective,
     ColorizeBorderDirective,
     FormComponent,
     ConfirmationComponent

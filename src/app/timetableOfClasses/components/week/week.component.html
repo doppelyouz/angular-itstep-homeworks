@@ -1,0 +1,10 @@
+<div class="week">
+  <h5>{{week.date}}</h5>
+  <div class="week__lessons">
+    <div class="week__lesson"  *ngFor="let lesson of week.lessons">
+      <a [routerLink]="['/lesson/' + lesson.id]">
+        <app-lesson [lesson]="lesson" />
+      </a>
+    </div>
+  </div>
+</div>

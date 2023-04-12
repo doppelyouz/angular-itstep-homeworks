@@ -1,0 +1,11 @@
+<div class="lesson">
+  <div *ngIf="isEditing; else notEdit">
+    <input type="text" [(ngModel)]="newName" [value]="lesson?.name">
+    <input type="text" [(ngModel)]="newTime" [value]="lesson?.time">
+  </div>
+  <ng-template #notEdit>
+    <h1>{{lesson?.name}}</h1>
+    <h5>{{lesson?.time}}</h5>
+  </ng-template>
+  <button class="btn btn-primary edit" (click)="onEdit()">Редактировать</button>
+</div>
